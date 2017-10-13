@@ -1,0 +1,95 @@
+@media screen and (max-width: 767px) {
+    .navbar-default {
+        background-color: #F0F0F0;
+    }
+
+    .navbar-default .navbar-nav .open a {
+        color: black;
+    }
+
+    .navbar-default .navbar-nav .open a:hover {
+        color: black;
+    }
+
+    .navbar-default .navbar-nav .open a:focus {
+        color: black;
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu li a {
+        color: black;
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu li a:hover {
+        color: #31b0d5;
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu li a:focus {
+        color: #31b0d5;
+    }
+
+    #header {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/header/27285334-civil-engineering-wallpapers.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
+
+    #o-nas .row {
+        margin: 15px 0px;
+    }
+
+    #o-nas .kolumna p,
+  #o-nas .kolumna h4 {
+        text-align: center;
+    }
+
+    #o-nas .kolumna .img-cont {
+        width: 100%;
+    }
+
+    footer {
+        padding: 5px 0;
+    }
+
+    #pricelist {
+        padding-bottom: 0;
+    }
+
+    #pricelist #trzy-d {
+        padding-bottom: 10px;
+    }
+
+    #pricelist .attr-col {
+        display: none;
+    }
+
+    #pricelist .pt-table {
+        padding-left: 0;
+    }
+
+    #pricelist .advertisement {
+        text-align: center;
+    }
+
+    #pricelist .advertisement .col-xs-12 {
+        margin: 5px 0px;
+    }
+
+    #pricelist #pricelist-descr ul,
+    #pricelist #trzy-d ul {
+        padding-left: 15%;
+    }
+
+    #pricelist .pt-rows li span {
+        width: 50%;
+    }
+
+    #pricelist .pt-rows li span:nth-child(2) {
+        border-right: none;
+    }
+
+    #pricelist .pt-rows li .title span {
+        line-height: 30px;
+        height: 30px;
+    }
+}

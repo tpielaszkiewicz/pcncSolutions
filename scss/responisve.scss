@@ -1,0 +1,94 @@
+    @import "variables";
+    @import "mixins";
+    @media screen and (max-width: 767px) {
+        .navbar-default {
+            background-color: $color-white-light;
+            .navbar-nav {
+                .open {
+                    a {
+                        color: black;
+                        &:hover {
+                            color: black;
+                        }
+                        &:focus {
+                            color: black;
+                        }
+                    }
+                    .dropdown-menu {
+                        li {
+                            a {
+                                color: black;
+                                &:hover {
+                                    color: $color-blue-dark;
+                                }
+                                &:focus {
+                                    color: $color-blue-dark;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #header {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/header/27285334-civil-engineering-wallpapers.jpg');
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+        #o-nas {
+            .row {
+                margin: 15px 0px;
+            }
+            .kolumna {
+                p,
+                h4 {
+                    text-align: center;
+                }
+                .img-cont {
+                    width: 100%;
+                }
+            }
+        }
+        footer {
+            padding: 5px 0;
+        }
+        #pricelist {
+            padding-bottom: 0;
+            
+            #trzy-d{
+                padding-bottom: 10px;
+            }
+            .attr-col {
+               display: none;
+            }
+            .pt-table {
+                padding-left: 0;
+            }
+            .advertisement {
+                text-align: center;
+                .col-xs-12 {
+                    margin: 5px 0px;
+                }
+            }
+            #pricelist-descr ul,
+            #trzy-d ul {
+                padding-left: 15%;
+            }
+            .pt-rows li {
+                
+                span {
+                    width: 50%;
+                    
+                    &:nth-child(2){
+                        border-right: none;
+                    }
+                }
+                
+                .title span {
+                    line-height: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }

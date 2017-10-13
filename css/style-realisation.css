@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Droid Serif', sans-serif;
+}
+
+.navbar-default {
+    background-color: #F0F0F0;
+    border: none;
+    min-height: 50px;
+}
+
+.navbar-default .dropdown-menu {
+    padding: 5px 0;
+    border: none;
+    background-color: #F0F0F0;
+}
+
+.navbar-default .dropdown-menu li {
+    padding: 5px;
+    position: relative;
+}
+
+.navbar-default .dropdown-menu li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #333;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar-default .dropdown-menu li a:hover::before {
+    visibility: visible;
+    background-color: #31b0d5;
+    -webkit-transform: scaleX(0.9);
+    transform: scaleX(0.9);
+}
+
+.navbar-default .navbar-nav li a {
+    color: #000;
+    font-weight: 600;
+    transition: all 0.5s;
+    text-align: center;
+    background-color: #F0F0F0;
+}
+
+.navbar-default .navbar-nav li a:hover {
+    color: #31b0d5;
+}
+
+.navbar-default .navbar-brand {
+    color: #31b0d5;
+    padding: 5px 15px;
+}
+
+.navbar-default .navbar-brand img {
+    height: 45px;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: black;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: black;
+}
+
+.navbar-default .navbar-toggle:hover {
+    background-color: #F0F0F0;
+    border-color: #31b0d5;
+}
+
+.navbar-default .navbar-toggle:hover .icon-bar {
+    background-color: #31b0d5;
+}
+
+.navbar-default .navbar-toggle:focus {
+    background-color: #F0F0F0;
+}
+
+#header {
+    height: 80vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/header/27285334-civil-engineering-wallpapers.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    margin: 0px;
+}
+
+#header #header-cont {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#header #header-cont h1,
+    #header #header-cont h2 {
+    color: #F0F0F0;
+    font-family: 'Roboto Slab', sans-serif;
+    margin-bottom: 30px;
+}
+
+#header #header-cont .btn-info {
+    transition: all 0.5s;
+    font-weight: 600;
+}
+
+#header #header-cont .btn-info:hover {
+    color: #31b0d5;
+    background-color: #F0F0F0;
+    border-color: #F0F0F0;
+}
+
+#realisation {
+    padding: 30px;
+    background-color: #F0F0F0;
+    overflow: hidden;
+}
+
+#realisation h3,
+  #realisation p {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+#realisation #slider-realisation #gallery-min:hover::-webkit-scrollbar {
+    cursor: pointer;
+}
+
+#realisation #slider-realisation #gallery-min::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+
+#realisation #slider-realisation #gallery-min::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+#realisation #slider-realisation #gallery-min::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #FFF;
+    background-image: -webkit-linear-gradient(top, #2a6aff 0%, #31b0d5 20%, #31b0d5 80%, #2a6aff 100%);
+}
+
+#realisation #slider-realisation .scrollbar {
+    /*background-color: #666;*/
+    width: 100%;
+    border-radius: 5px;
+    float: left;
+    max-height: 300px;
+    overflow-y: scroll;
+    margin-bottom: 25px;
+}
+
+#realisation #slider-realisation .scrollbar .force-overflow {
+    min-height: 450px;
+}
+
+#realisation #slider-realisation .one-image {
+    width: 50%;
+    margin: 0;
+    padding: 5px;
+    float: left;
+}
+
+#realisation #slider-realisation .one-image .image-wrap {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#realisation #slider-realisation .one-image .image-wrap img {
+    height: 100%;
+    transition: all .5s;
+}
+
+#realisation #slider-realisation .one-image .image-wrap img:hover, #realisation #slider-realisation .one-image .image-wrap img:focus {
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+#realisation #slider-realisation .one-image .image-wrap:hover .figcaption {
+    bottom: 10%;
+}
+
+#realisation #slider-realisation .one-image .image-wrap .figcaption {
+    position: absolute;
+    bottom: -50%;
+    transition: all .5s;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+#realisation #slider-realisation .one-image .image-wrap .figcaption:hover {
+    bottom: -20%;
+}
+
+#realisation #slider-realisation .wrapper {
+    padding: 10px;
+    max-height: 300px;
+    overflow: hidden;
+}
+
+#realisation #slider-realisation .wrapper img {
+    width: 100%;
+    -o-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -mozilla-border-radius: 5px;
+    border-radius: 5px;
+}
+
+footer .fa {
+    font-size: 30px;
+    line-height: 30px;
+    color: #31b0d5;
+    margin: 10px;
+    transition: all .5s;
+    margin: 5px;
+}
+
+footer .fa:hover {
+    cursor: pointer;
+    color: black;
+}
+
+footer p {
+    margin: 10px;
+    line-height: 30px;
+}

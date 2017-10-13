@@ -1,0 +1,125 @@
+//podpinamy plik ze zmiennymi
+@import "variables";
+@import "mixins";
+
+#offer {
+    @include section;
+    text-align: center;
+    .advertisement a {
+        position: relative;
+        text-decoration: none;
+        font-family: $font-sections;
+        font-weight: 600;
+        transition: all .5s;
+        &:hover {
+            color: $color-black;
+            &::before,
+            &::after {
+                opacity: 1;
+                -webkit-transform: translateY(0px);
+                -moz-transform: translateY(0px);
+                transform: translateY(0px);
+            }
+        }
+        &:focus {
+            color: $color-black;
+            &::before,
+            &::after {
+                opacity: 1;
+                -webkit-transform: translateY(0px);
+                -moz-transform: translateY(0px);
+                transform: translateY(0px);
+            }
+        }
+        &::before,
+        &::after {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: $color-black;
+            content: '';
+            opacity: 0;
+            -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+            -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+            transition: opacity 0.3s, transform 0.3s;
+            -webkit-transform: translateY(-10px);
+            -moz-transform: translateY(-10px);
+            transform: translateY(-10px);
+        }
+        &::before {
+            top: 0;
+            -webkit-transform: translateY(-10px);
+            -moz-transform: translateY(-10px);
+            transform: translateY(-10px);
+        }
+        &::after {
+            bottom: 0;
+            -webkit-transform: translateY(10px);
+            -moz-transform: translateY(10px);
+            transform: translateY(10px);
+        }
+    }
+    #mill-offer,
+    #laser-offer,
+    #d-offer {
+        ul {
+            list-style: none;
+            text-align: left;
+            padding-left: 10%;
+            margin-bottom: 20px;
+            li {
+                @include list;
+            }
+        }
+    }
+    #ask {
+        //button na koncu
+        padding: 10px;
+        font-family: $font-sections;
+        font-weight: 600;
+    }
+    .invisible {
+        display: none;
+    }
+    .row {
+        margin-bottom: 15px;
+    }
+    span {
+        font-weight: 600;
+    }
+    #laser-offer {
+        h4 {
+            font-family: $font-sections;
+            text-align: left;
+        }
+        ul {
+            margin-left: 0px;
+        }
+    }
+    #d-offer {
+        .panel {
+            text-align: left;
+            margin-top: 30px;
+            ul {
+                padding-left: 0;
+                li {
+                    
+                    &::before{
+                        content: '\f2b5';
+                    }
+                }
+            }
+        }
+    }
+}
+
+#letters-space,
+#letters-lighted,
+#cassetons {
+    @include sub-section;
+    text-align: center;
+    span {
+        font-weight: 800;
+    }
+}

@@ -1,0 +1,306 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Droid Serif', sans-serif;
+}
+
+.navbar-default {
+    background-color: #F0F0F0;
+    border: none;
+    min-height: 50px;
+}
+
+.navbar-default .dropdown-menu {
+    padding: 5px 0;
+    border: none;
+    background-color: #F0F0F0;
+}
+
+.navbar-default .dropdown-menu li {
+    padding: 5px;
+    position: relative;
+}
+
+.navbar-default .dropdown-menu li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #333;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar-default .dropdown-menu li a:hover::before {
+    visibility: visible;
+    background-color: #31b0d5;
+    -webkit-transform: scaleX(0.9);
+    transform: scaleX(0.9);
+}
+
+.navbar-default .navbar-nav li a {
+    color: #000;
+    font-weight: 600;
+    transition: all 0.5s;
+    text-align: center;
+    background-color: #F0F0F0;
+}
+
+.navbar-default .navbar-nav li a:hover {
+    color: #31b0d5;
+}
+
+.navbar-default .navbar-brand {
+    color: #31b0d5;
+    padding: 5px 15px;
+}
+
+.navbar-default .navbar-brand img {
+    height: 45px;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: black;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: black;
+}
+
+.navbar-default .navbar-toggle:hover {
+    background-color: #F0F0F0;
+    border-color: #31b0d5;
+}
+
+.navbar-default .navbar-toggle:hover .icon-bar {
+    background-color: #31b0d5;
+}
+
+.navbar-default .navbar-toggle:focus {
+    background-color: #F0F0F0;
+}
+
+#header {
+    height: 80vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/header/27285334-civil-engineering-wallpapers.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    margin: 0px;
+}
+
+#header #header-cont {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#header #header-cont h1,
+    #header #header-cont h2 {
+    color: #F0F0F0;
+    font-family: 'Roboto Slab', sans-serif;
+    margin-bottom: 30px;
+}
+
+#header #header-cont .btn-info {
+    transition: all 0.5s;
+    font-weight: 600;
+}
+
+#header #header-cont .btn-info:hover {
+    color: #31b0d5;
+    background-color: #F0F0F0;
+    border-color: #F0F0F0;
+}
+
+#offer {
+    padding: 30px;
+    background-color: #F0F0F0;
+    overflow: hidden;
+    text-align: center;
+}
+
+#offer h3,
+  #offer p {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+#offer .advertisement a {
+    position: relative;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    transition: all .5s;
+}
+
+#offer .advertisement a:hover {
+    color: #000;
+}
+
+#offer .advertisement a:hover::before, #offer .advertisement a:hover::after {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
+}
+
+#offer .advertisement a:focus {
+    color: #000;
+}
+
+#offer .advertisement a:focus::before, #offer .advertisement a:focus::after {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
+}
+
+#offer .advertisement a::before, #offer .advertisement a::after {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #000;
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
+
+#offer .advertisement a::before {
+    top: 0;
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
+
+#offer .advertisement a::after {
+    bottom: 0;
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    transform: translateY(10px);
+}
+
+#offer #mill-offer ul,
+  #offer #laser-offer ul,
+  #offer #d-offer ul {
+    list-style: none;
+    text-align: left;
+    padding-left: 10%;
+    margin-bottom: 20px;
+}
+
+#offer #mill-offer ul li,
+    #offer #laser-offer ul li,
+    #offer #d-offer ul li {
+    list-style-type: none;
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 10px;
+}
+
+#offer #mill-offer ul li::before,
+      #offer #laser-offer ul li::before,
+      #offer #d-offer ul li::before {
+    font-family: 'FontAwesome';
+    content: '\f013';
+    margin-right: 15px;
+}
+
+#offer #ask {
+    padding: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+#offer .invisible {
+    display: none;
+}
+
+#offer .row {
+    margin-bottom: 15px;
+}
+
+#offer span {
+    font-weight: 600;
+}
+
+#offer #laser-offer h4 {
+    font-family: "Montserrat", sans-serif;
+    text-align: left;
+}
+
+#offer #laser-offer ul {
+    margin-left: 0px;
+}
+
+#offer #d-offer .panel {
+    text-align: left;
+    margin-top: 30px;
+}
+
+#offer #d-offer .panel ul {
+    padding-left: 0;
+}
+
+#offer #d-offer .panel ul li::before {
+    content: '\f2b5';
+}
+
+#letters-space,
+#letters-lighted,
+#cassetons {
+    padding: 40px 20px;
+    background-color: #F0F0F0;
+    overflow: hidden;
+    text-align: center;
+}
+
+#letters-space h4,
+  #letters-space p,
+  #letters-lighted h4,
+  #letters-lighted p,
+  #cassetons h4,
+  #cassetons p {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#letters-space span,
+  #letters-lighted span,
+  #cassetons span {
+    font-weight: 800;
+}
+
+footer .fa {
+    font-size: 30px;
+    line-height: 30px;
+    color: #31b0d5;
+    margin: 10px;
+    transition: all .5s;
+    margin: 5px;
+}
+
+footer .fa:hover {
+    cursor: pointer;
+    color: black;
+}
+
+footer p {
+    margin: 10px;
+    line-height: 30px;
+}
