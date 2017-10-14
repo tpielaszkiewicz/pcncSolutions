@@ -18,9 +18,28 @@
         position: relative;
         left: 130%;
     }
+
+    #quote {
+        text-align: right;
+        font-style: italic;
+        margin: 40px 10px 10px 0px;
+
+        &::before {
+            content: open-quote;
+        }
+
+        &::after {
+            content: close-quote;
+        }
+    }
+
+    #author {
+        text-align: right;
+        padding-right: 5%;
+        margin-top: 0;
+    }
     .kolumna {
-        text-align: center;
-        //        width: 80%;
+        text-align: center; //        width: 80%;
         .fa {
             line-height: 40px;
             height: 40px;
@@ -32,12 +51,25 @@
             font-family: $font-sections;
             text-align: left;
             margin-top: 0;
+            
+            span{
+                font-weight: 800;
+            }
         }
+
+        ul {
+            text-align: left;
+            li {
+                @include list;
+            }
+        }
+
+
         .img-cont {
             width: 90%;
             overflow: hidden;
             border: 10px solid white;
-            height: 250px;
+            height: 350px;
             margin-bottom: 20px;
             .img-photo {
                 height: 100%;
@@ -77,11 +109,8 @@
                     }
                     .mask-inner {
                         position: absolute;
-                        opacity: inherit;
-                        
-                        //                        width: 80%;
-                        top: 50%;
-                        //                        opacity: 0.0;
+                        opacity: inherit; //                        width: 80%;
+                        top: 50%; //                        opacity: 0.0;
                         left: 50%;
                         transform: translate(-50%, -50%);
                         transition-timing-function: linear;
@@ -108,8 +137,15 @@
             #photo3 {
                 background-image: url('../img/slider/frez_mala1.JPG');
             }
+            
+            #photo4 {
+                background-image: url('../img/slider/3d-printer-kit-prusa-steel-black-edition.jpg');
+            }
         }
     }
+
+
+
     #summary {
         margin: 0;
         .row {
@@ -131,8 +167,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             border: 8px solid white;
-            @include border-radius(5px);
-            //            border-radius: 5px;
+            @include border-radius(5px); //            border-radius: 5px;
             transition: all .5s;
             #exit-bar {
                 position: absolute;

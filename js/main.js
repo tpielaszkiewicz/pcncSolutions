@@ -158,23 +158,23 @@ function plotterSlider() {
 function passIn() {
     $(window).on('scroll', function () {
 
-        if ($(window).scrollTop() > 130) {
+        if ($(window).scrollTop() > 100) {
             $('.row:nth-child(1)').css('left', '0%');
         }
 
-        if ($(window).scrollTop() > 200) {
+        if ($(window).scrollTop() > 450) {
             $('.row:nth-child(2)').css('left', '0%');
         }
 
-        if ($(window).scrollTop() > 450) {
+        if ($(window).scrollTop() > 750) {
             $('.row:nth-child(3)').css('left', '0%');
         }
 
-        if ($(window).scrollTop() > 900) {
+        if ($(window).scrollTop() > 1200) {
             $('.row:nth-child(4)').css('left', '0%');
         }
 
-        if ($(window).scrollTop() > 1000) {
+        if ($(window).scrollTop() > 1500) {
             $('.row:nth-child(5)').css('left', '0%');
         }
     })

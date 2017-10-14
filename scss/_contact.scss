@@ -6,6 +6,7 @@
     font-family: 'Droid Serif', sans-serif;
 }
 
+
 #contact {
     @include section;
     .row {
@@ -70,8 +71,13 @@
     .btn-primary{
         font-family: $font-sections;
         background-color: $color-blue-dark;
-        border-color: $color-blue-light;
+        border-color: $color-blue-dark;
         font-weight: 600;
+        transition: all .5s;
+        &:hover{
+            color: $color-blue-dark;
+            background: $color-white-light;
+        }
     }
     
     .alert-invisible{

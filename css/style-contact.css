@@ -214,8 +214,14 @@
 #contact .btn-primary {
     font-family: "Montserrat", sans-serif;
     background-color: #31b0d5;
-    border-color: #2a6aff;
+    border-color: #31b0d5;
     font-weight: 600;
+    transition: all .5s;
+}
+
+#contact .btn-primary:hover {
+    color: #31b0d5;
+    background: #F0F0F0;
 }
 
 #contact .alert-invisible {

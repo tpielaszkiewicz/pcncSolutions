@@ -140,6 +140,26 @@
     left: 130%;
 }
 
+#o-nas #quote {
+    text-align: right;
+    font-style: italic;
+    margin: 40px 10px 10px 0px;
+}
+
+#o-nas #quote::before {
+    content: open-quote;
+}
+
+#o-nas #quote::after {
+    content: close-quote;
+}
+
+#o-nas #author {
+    text-align: right;
+    padding-right: 5%;
+    margin-top: 0;
+}
+
 #o-nas .kolumna {
     text-align: center;
 }
@@ -158,11 +178,33 @@
     margin-top: 0;
 }
 
+#o-nas .kolumna p span,
+      #o-nas .kolumna h4 span {
+    font-weight: 800;
+}
+
+#o-nas .kolumna ul {
+    text-align: left;
+}
+
+#o-nas .kolumna ul li {
+    list-style-type: none;
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 10px;
+}
+
+#o-nas .kolumna ul li::before {
+    font-family: 'FontAwesome';
+    content: '\f013';
+    margin-right: 15px;
+}
+
 #o-nas .kolumna .img-cont {
     width: 90%;
     overflow: hidden;
     border: 10px solid white;
-    height: 250px;
+    height: 350px;
     margin-bottom: 20px;
 }
 
@@ -240,6 +282,10 @@
 
 #o-nas .kolumna .img-cont #photo3 {
     background-image: url("../img/slider/frez_mala1.JPG");
+}
+
+#o-nas .kolumna .img-cont #photo4 {
+    background-image: url("../img/slider/3d-printer-kit-prusa-steel-black-edition.jpg");
 }
 
 #o-nas #summary {

@@ -55,12 +55,12 @@
         }
         #pricelist {
             padding-bottom: 0;
-            
-            #trzy-d{
+
+            #trzy-d {
                 padding-bottom: 10px;
             }
             .attr-col {
-               display: none;
+                display: none;
             }
             .pt-table {
                 padding-left: 0;
@@ -71,20 +71,27 @@
                     margin: 5px 0px;
                 }
             }
-            #pricelist-descr ul,
-            #trzy-d ul {
-                padding-left: 15%;
+            #pricelist-descr {
+                ul {
+                    padding-left: 15%;
+                }
+
+            }
+            #trzy-d {
+                ul {
+                    padding-left: 30%;
+                }
             }
             .pt-rows li {
-                
+
                 span {
                     width: 50%;
-                    
-                    &:nth-child(2){
+
+                    &:nth-child(2) {
                         border-right: none;
                     }
                 }
-                
+
                 .title span {
                     line-height: 30px;
                     height: 30px;

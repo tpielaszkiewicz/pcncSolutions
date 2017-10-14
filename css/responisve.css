@@ -75,9 +75,12 @@
         margin: 5px 0px;
     }
 
-    #pricelist #pricelist-descr ul,
-    #pricelist #trzy-d ul {
+    #pricelist #pricelist-descr ul {
         padding-left: 15%;
+    }
+
+    #pricelist #trzy-d ul {
+        padding-left: 30%;
     }
 
     #pricelist .pt-rows li span {
