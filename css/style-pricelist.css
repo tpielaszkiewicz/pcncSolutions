@@ -137,14 +137,14 @@
 
 #pricelist #pricelist-descr,
   #pricelist #trzy-d {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 #pricelist #pricelist-descr ul,
     #pricelist #trzy-d ul {
     list-style: none;
     text-align: left;
-    padding-left: 40%;
+    padding-left: 35%;
     margin: 20px;
 }
 
@@ -161,6 +161,10 @@
     font-family: 'FontAwesome';
     content: '\f013';
     margin-right: 15px;
+}
+
+#pricelist #trzy-d ul {
+    padding-left: 40%;
 }
 
 #pricelist #laser,

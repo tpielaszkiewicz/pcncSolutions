@@ -5,17 +5,26 @@
     @include section;
     #pricelist-descr,
     #trzy-d {
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         ul {
             list-style: none;
             text-align: left;
-            padding-left: 40%;
+            
+            padding-left: 35%;
             margin: 20px;
             li {
                 @include list;
             }
         }
     }
+
+    #trzy-d {
+      
+        ul {
+            padding-left: 40%;
+        }
+    }
+    
     #laser,
     #grawer,
     #giecie,

@@ -1,5 +1,16 @@
     @import "variables";
     @import "mixins";
+
+    @media screen and (max-width: 992px) {
+        #pricelist {
+            #trzy-d {
+                ul {
+                    padding-left: 30%;
+                }
+            }
+        }
+    }
+
     @media screen and (max-width: 767px) {
         .navbar-default {
             background-color: $color-white-light;
@@ -14,6 +25,7 @@
                             color: black;
                         }
                     }
+
                     .dropdown-menu {
                         li {
                             a {
@@ -25,14 +37,14 @@
                                     color: $color-blue-dark;
                                 }
                             }
-                            
+
                         }
                     }
                 }
             }
         }
         #header {
-//            height: 60vh;
+            //            height: 60vh;
             background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/header/header2.jpg');
             background-attachment: fixed;
             background-position: center;
