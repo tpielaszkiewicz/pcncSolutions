@@ -23,6 +23,10 @@
     #trzy-d,
         {
         @include sub-section;
+            
+            h4{
+                padding: 20px;
+            }
     }
 
      .advertisement a {
