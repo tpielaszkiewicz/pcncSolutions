@@ -47,6 +47,8 @@
     font-weight: 600;
     transition: all 0.5s;
     text-align: center;
+    padding: 10px 0 21px 15px;
+    font-size: 16px;
     background-color: #F0F0F0;
 }
 
@@ -86,7 +88,7 @@
 
 #header {
     height: 80vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/header/header2.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/header/header3.jpg");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;

@@ -43,6 +43,8 @@
                 font-weight: $font-bold;
                 transition: all 0.5s;
                 text-align: center;
+                padding: 10px 0 21px 15px;
+                font-size: $font-navbar;
                 background-color: #F0F0F0;
                 &:hover {
                     color: $color-blue-dark;
